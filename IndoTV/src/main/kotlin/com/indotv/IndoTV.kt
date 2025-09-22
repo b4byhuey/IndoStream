@@ -20,7 +20,7 @@ class IndonesiaTV : MainAPI() {
     )
 
     override val mainPage = mainPageOf(
-        mainUrl to "TV Nasional",
+        mainUrl to "Lokal",
     )
 
     override suspend fun getMainPage(
@@ -29,7 +29,7 @@ class IndonesiaTV : MainAPI() {
     ): HomePageResponse {
 
         val json = app.get(mainUrl).text
-        val home = tryParseJson<ArrayList<Channels>>(json)?.map {
+        val home = tryParseJson<ArrayList<Lokal>>(json)?.map {
             newLiveSearchResponse(
                 it.channel ?: "",
                 ChannelData(it.channel, it.url, it.poster, it.group).toJson(),
