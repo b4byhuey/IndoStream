@@ -9,8 +9,8 @@ import com.lagradost.cloudstream3.plugins.Plugin
 class DutaMoviePlugin : Plugin() {
     override fun load(context: Context) {
         registerMainAPI(DutaMovie())
-        registerExtractorAPI(Ryderjet())
-        registerExtractorAPI(JWPlayer())
-        registerExtractorAPI(Embedfirex())
+        registerExtractorAPI(Embedpyrox())
+        registerExtractorAPI(Helvid())
+        registerExtractorAPI(P2pplay())
     }
 }
