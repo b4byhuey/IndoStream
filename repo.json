@@ -1,0 +1,8 @@
+{
+    "name": "Indostream Repo",
+    "description": "Test Repo",
+    "manifestVersion": 1,
+    "pluginLists": [
+      "https://raw.githubusercontent.com/b4byhuey/IndoStream/builds/plugins.json"
+    ]
+}
