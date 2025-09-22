@@ -20,7 +20,7 @@ class IndonesiaTV : MainAPI() {
     )
 
     override val mainPage = mainPageOf(
-        "Channels" to mainUrl,
+        "Channels" to "TV Nasional",
     )
 
     override suspend fun getMainPage(
