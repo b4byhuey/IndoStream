@@ -29,7 +29,7 @@ class IndonesiaTV : MainAPI() {
     ): HomePageResponse {
 
         val json = app.get(mainUrl).text
-        val home = tryParseJson<ArrayList<Lokal>>(json)?.map {
+        val home = tryParseJson<ArrayList<ChannelData>>(json)?.map {
             newLiveSearchResponse(
                 it.channel ?: "",
                 ChannelData(it.channel, it.url, it.poster, it.group).toJson(),
